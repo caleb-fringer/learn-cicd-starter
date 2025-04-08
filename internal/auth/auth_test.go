@@ -6,7 +6,6 @@ import (
 )
 
 func TestGetAPIKeyBlankHeader(t *testing.T) {
-	t.Fatalf("FAILING TEST TO TEST CI")
 	header := http.Header{}
 	_, err := GetAPIKey(header)
 	if err != ErrNoAuthHeaderIncluded {
